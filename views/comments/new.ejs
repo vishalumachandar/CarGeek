@@ -1,0 +1,22 @@
+<!-- Header -->
+<%- include("../partials/header") %>
+
+<!-- body -->
+<div class="container">
+	<div class="row" style="text-align: center;"> 
+		<h1 >Add New Comment to <%=cars.name%></h1>
+		<div style="margin: 25px auto; width: 30%">
+			<form action="/cars/<%= cars._id %>/comments" method="POST">
+				<div class="form-group">
+					<input class="form-control" type="text" name="comment[text]" placeholder="comment">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-lg btn-default btn-block btn-primary">Submit</button>
+				</div>
+			</form>
+			<a style="text-align: center;" href="/cars">Go Back</a>
+		</div>
+	</div>
+</div>
+<!-- Footer -->
+<%- include("../partials/footer") %>

@@ -1,0 +1,38 @@
+.thumbnail img{
+	width: 100%;
+}
+.thumbnail{
+	padding:0px;
+}
+.thumbnail .caption-full{
+	padding:9px;
+}
+.delete-form{
+	display: inline;
+}
+.navbar{
+	color: black;
+}
+body
+{
+	background-color: #2d3436;
+	background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+	background-size: cover;
+}
+.jumbotron{
+	background-image: url(http://www.dk-shoppen.com/wp-content/uploads/2018/04/bentley-mulsanne-3169363_1920-800x300.jpg)!important;
+	width: 100%;
+	height: 30%;
+	color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+.navbar{
+	margin-bottom: 0px;
+}
+.main{
+
+
+	height: 1400px;
+}

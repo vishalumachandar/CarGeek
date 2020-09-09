@@ -1,0 +1,37 @@
+<!-- Header -->
+<%- include("../partials/header") %>
+
+<!-- Body -->
+<div class="container-fluid main">
+	<header class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-4">Welcome Car Geek!</h1>
+			<p class="lead">We talk cars 24x7</p>
+			<p>
+				<a class="btn btn-primary btn-lg" href="/cars/new">Add A New Supercar</a>
+			</p>
+		</div>
+	</header>
+	<!--for the images  -->
+	<div class="container">
+		<div class="row text-center" style="display: flex; flex-wrap: wrap; ">
+		<% cars.forEach(function(cars){%>
+			<div class="col-md-3 col-sm-6" style="padding-left: 0px;">
+				<div class="thumbnail">
+					<img src="<%=cars.url%>">
+					<div class="caption" style="text-align: center;">
+						<h4><%= cars.name%></h4>		
+					</div>
+					<p>
+						<a href="/cars/<%=cars._id%>" class="btn btn-primary">More info</a>
+					</p>		
+				</div>
+			</div>
+			<% })%>
+	</div>	
+	</div>
+	
+</div>
+
+<!-- Footer -->
+<%- include("../partials/footer") %>
